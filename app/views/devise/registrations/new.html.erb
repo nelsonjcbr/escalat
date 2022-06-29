@@ -17,6 +17,12 @@
                     </div>
                 </div>
                 <div class="form-group position-relative has-icon-left mb-4">
+                    <%= f.text_field :name, autofocus: true, autocomplete: "nome", placeholder: "Nome",  class: "form-control form-control-xl"%>
+                    <div class="form-control-icon">
+                        <i class="bi bi-people"></i>
+                    </div>
+                </div>
+                <div class="form-group position-relative has-icon-left mb-4">
                     <% if @minimum_password_length %>
                         <em>(<%= @minimum_password_length %> characters minimum)</em>
                     <% end %><br />

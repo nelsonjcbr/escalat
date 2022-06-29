@@ -107,7 +107,10 @@
                                 
                                 <ul class="submenu ">
                                     <li class="submenu-item ">
-                                        <a href="/users/edit">Cadastro</a>
+                                        <a href="/users/edit">Alterar</a>
+                                    </li>
+                                    <li class="submenu-item ">
+                                        <%= link_to "Registrar", new_user_registration_path %>
                                     </li>
                                     <li class="submenu-item ">
                                         <%= link_to "Desconectar", destroy_user_session_path, "data-turbo-method": :delete, :class => 'dropdown-item' %>
